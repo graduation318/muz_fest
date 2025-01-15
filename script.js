@@ -47,3 +47,26 @@ navLinks.forEach((link) => {
         toggleVolumeButton.blur();
     });
 });
+
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modalImage');
+        const modalClose = document.getElementById('modalClose');
+        const galleryImages = document.querySelectorAll('.gallery__image');
+
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                const imgSrc = image.getAttribute('data-image');
+                modalImage.src = imgSrc;
+                modal.style.display = 'flex';
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
