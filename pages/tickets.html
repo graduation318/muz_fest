@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/blocks/tickets/tickets.css">
+    <link rel="icon" href="/icons/icon/good-life-icon.ico" type="image/x-icon">
+    <title>Good Life Fest</title>
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/main.html">Главная</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/schedule.html">Расписание</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/artists.html">Артисты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/map.html">Карта фестиваля</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Билеты</a></li>
+                <li class="header__menu-item">
+                    <button id="toggle-volume" class="header__menu-button">🔊 Включить</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <audio id="background-music" autoplay loop>
+        <source src="/audio/background/background.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает воспроизведение аудио.
+    </audio>
+   
+    <section class="tickets">
+        <h1 class="tickets__title">Категории билетов</h1>
+        <p class="tickets__subtitle">Привилегии предыдущих категорий включены в более премиальные билеты</p>
+        <div class="tickets__list">
+            <div class="ticket ticket--standard">
+                <div class="ticket__icon">
+                    <img src="/icons/cathegories/deafult.svg" alt="Иконка стандартного билета" class="ticket__icon-image">
+                </div>
+                <h2 class="ticket__title">Стандартный</h2>
+                <ul class="ticket__features">
+                    <li class="ticket__feature">Доступ к главной сцене</li>
+                    <li class="ticket__feature">Фуд-корт и зона отдыха</li>
+                    <li class="ticket__feature">Участие в мастер-классах</li>
+                </ul>
+                <button data-ticket="standard" data-price="1000" class="ticket__button">Купить</button>
+            </div>
+            <div class="ticket ticket--fan">
+                <div class="ticket__icon">
+                    <img src="/icons/cathegories/fan.svg" alt="Иконка билета для фанатов" class="ticket__icon-image">
+                </div>
+                <h2 class="ticket__title">Фанат</h2>
+                <ul class="ticket__features">
+                    <li class="ticket__feature">Доступ к фан-зоне с бесплатными закусками и напитками</li>
+                    <li class="ticket__feature">Лучшие места у сцены</li>
+                    <li class="ticket__feature">Эксклюзивный мерч</li>
+                </ul>
+                <button data-ticket="fan" data-price="2000" class="ticket__button">Купить</button>
+            </div>
+            <div class="ticket ticket--vip">
+                <div class="ticket__icon">
+                    <img src="/icons/cathegories/vip.svg" alt="Иконка VIP билета" class="ticket__icon-image">
+                </div>
+                <h2 class="ticket__title">VIP</h2>
+                <ul class="ticket__features">
+                    <li class="ticket__feature">Пропуск за кулисы и встреча с артистами</li>
+                    <li class="ticket__feature">VIP-зоны для отдыха</li>
+                    <li class="ticket__feature">Доступ на афтепати</li>
+                </ul>
+                <button data-ticket="vip" data-price="5000" class="ticket__button">Купить</button>
+            </div>
+        </div>
+    </section>
+
+<div class="payment-modal payment-modal--hidden" id="payment-modal">
+    <div class="payment-modal__content">
+        <button class="payment-modal__close-button">&times;</button>
+        <h2 class="payment-modal__title">Процесс оплаты</h2>
+        <div id="payment-modal-price" class="payment-modal__price"></div>
+        <form class="payment-modal__form">
+            <input class="payment-modal__input" type="text" name="name" placeholder="Имя, Фамилия" required>
+            <input class="payment-modal__input" type="tel" name="phone" placeholder="Номер телефона" required>
+            <input class="payment-modal__input" type="email" name="email" placeholder="E-mail" required>
+            <select class="payment-modal__input payment-modal__select" name="category" required>
+                <option value="" disabled selected>Выберите категорию билета</option>
+                <option value="standard">Стандартный</option>
+                <option value="fan">Фанат</option>
+                <option value="vip">VIP</option>
+            </select>
+            <input class="payment-modal__input" type="text" name="card-number" maxlength="16" placeholder="Номер карты" required>
+            <div class="payment-modal__row">
+                <input class="payment-modal__input payment-modal__input--small" type="text" name="expiry" placeholder="Срок действия (MM/YY)" required>
+                <input class="payment-modal__input payment-modal__input--small" type="text" name="cvc" maxlength="3" placeholder="CVC-код" required>
+            </div>
+            <button type="submit" class="payment-modal__button">Подтвердить оплату</button>
+        </form>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__socials">
+        <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/instagram.svg" alt="Instagram"></a>
+        <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/facebook.svg" alt="Facebook"></a>
+        <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/x.svg" alt="Twitter"></a>
+        <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/vk.svg" alt="VK"></a>
+        <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/tg.svg" alt="Telegram"></a>
+    </div>
+    <ul class="footer__menu">
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#faq">ЧАВО</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#privacy">Политика конфиденциальности</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#contacts">Контакты</a></li>
+    </ul>
+    <p class="footer__copyright">&copy; 2024 Good Life Fest. Все права соблюдены.</p>
+</footer>
+<script src="/scripts/pay.js"></script>
+</body>
+</html>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/blocks/map/map.css">
+    <link rel="icon" href="/icons/icon/good-life-icon.ico" type="image/x-icon">
+    <title>Good Life Fest</title>
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/main.html">Главная</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/schedule.html">Расписание</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/artists.html">Артисты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Карта фестиваля</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/pages/tickets.html">Билеты</a></li>
+                <li class="header__menu-item">
+                    <button id="toggle-volume" class="header__menu-button">🔊 Включить</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <audio id="background-music" autoplay loop>
+        <source src="/audio/background/background.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает воспроизведение аудио.
+    </audio>
+   
+    <h1 class="map__title">Карта фестиваля</h1>
+        <section class="map">
+            <div class="map__container">
+                <div class="map__tooltip" id="tooltip"></div>
+            </div>
+            <div class="map__legend legend">
+                <div class="legend__column">
+                    <div class="legend__item">
+                        <span class="legend__number">1</span>
+                        <span class="legend__label">Главная сцена</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">2</span>
+                        <span class="legend__label">Зона отдыха</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">3</span>
+                        <span class="legend__label">Фуд-корт</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">4</span>
+                        <span class="legend__label">Кемп-зона</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">5</span>
+                        <span class="legend__label">Мерч-зона</span>
+                    </div>
+                </div>
+                <div class="legend__column">
+                    <div class="legend__item">
+                        <span class="legend__number">6</span>
+                        <span class="legend__label">VIP-зона</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">7</span>
+                        <span class="legend__label">Backstage-зона</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">8</span>
+                        <span class="legend__label">Эко-зона</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">9</span>
+                        <span class="legend__label">Кинозона</span>
+                    </div>
+                    <div class="legend__item">
+                        <span class="legend__number">10</span>
+                        <span class="legend__label">Смотровая площадка</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="footer__socials">
+            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/instagram.svg" alt="Instagram"></a>
+            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/facebook.svg" alt="Facebook"></a>
+            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/x.svg" alt="Twitter"></a>
+            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/vk.svg" alt="VK"></a>
+            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="/icons/socials/tg.svg" alt="Telegram"></a>
+        </div>
+        <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#faq">ЧАВО</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#privacy">Политика конфиденциальности</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#contacts">Контакты</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; 2024 Good Life Fest. Все права соблюдены.</p>
+    </footer>
+    <script src="/scripts/map.js"></script>
+</body>
+</html>
