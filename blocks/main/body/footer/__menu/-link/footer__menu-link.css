@@ -1,0 +1,14 @@
+.footer__menu-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer__menu-link:hover {
+    color: #ff7ba5;
+}

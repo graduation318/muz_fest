@@ -1,0 +1,40 @@
+@import url("vendor/normalize.css");
+
+/* Блоки */
+
+@import url("body/body.css");
+@import url("body/page.css");
+@import url("body/footer/footer.css");
+@import url("body/header/header.css");
+@import url("body/schedule/schedule.css");
+
+
+/* Элементы */
+
+@import url("body/schedule/__activity/schedule__activity.css");
+@import url("body/schedule/__day/schedule__day.css");
+@import url("body/schedule/__event/schedule__event.css");
+@import url("body/schedule/__time/schedule__time.css");
+@import url("body/schedule/__title/schedule__title.css");
+@import url("body/schedule/__button/schedule__button.css");
+
+@import url("body/footer/__copyright/footer__copyright.css");
+@import url("body/footer/__menu/footer__menu.css");
+@import url("body/footer/__socials/footer__socials.css");
+
+@import url("body/header/__menu/header__menu.css");
+@import url("body/header/__nav/header__nav.css");
+
+/* Модификаторы */
+
+@import url("body/footer/__menu/-item/footer__menu-item.css");
+@import url("body/footer/__menu/-link/footer__menu-link.css");
+@import url("body/footer/__socials/_icon/footer__socials_icon.css");
+@import url("body/footer/__socials/_link/footer__socials_link.css");
+
+@import url("body/header/__menu/header__menu-button.css");
+@import url("body/header/__menu/header__menu-item.css");
+@import url("body/header/__menu/header__menu-link.css");
+
+@import url("body/schedule/__day/-title/schedule__day-title.css");
+@import url("body/schedule/__event/-content/schedule__event-content.css");
