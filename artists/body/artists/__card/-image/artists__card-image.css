@@ -1,0 +1,11 @@
+.artists__card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.artists__card:hover .artists__card-image {
+    transform: scale(1.1);
+}

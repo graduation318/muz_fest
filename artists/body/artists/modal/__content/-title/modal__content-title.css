@@ -1,0 +1,7 @@
+.modal__content-title {
+    color: black;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
