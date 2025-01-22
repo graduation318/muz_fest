@@ -1,0 +1,43 @@
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@font-face {
+    font-family: Compacta;
+    src: url(/fonts/Compacta.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: ProstoOne-Regular;
+    src: url(/fonts/ProstoOne-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Compacta;
+    margin: 0;
+    background: linear-gradient(45deg, #D48068, #9D3C54, #902769, #882D87, #663187);
+    animation: gradient 7s ease infinite;
+    background-size: 200% 200%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

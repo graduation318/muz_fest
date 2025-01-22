@@ -1,0 +1,52 @@
+@import url("vendor/normalize.css");
+
+/* Блоки */
+
+@import url("body/body.css");
+@import url("body/page.css");
+@import url("body/footer/footer.css");
+@import url("body/header/header.css");
+@import url("body/tickets/tickets.css");
+@import url("body/ticket/ticket.css");
+@import url("body/payment-modal/payment-modal.css");
+
+/* Элементы */
+
+@import url("body/tickets/__list/tickets__list.css");
+@import url("body/tickets/__subtitle/tickets__sybtitle.css");
+@import url("body/tickets/__title/tickets__title.css");
+
+@import url("body/ticket/__button/ticket__button.css");
+@import url("body/ticket/__feature/ticket__feature.css");
+@import url("body/ticket/__features/ticket__features.css");
+@import url("body/ticket/__icon/ticket__icon.css");
+@import url("body/ticket/__title/ticket__title.css");
+
+@import url("body/payment-modal/__button/payment-modal__button.css");
+@import url("body/payment-modal/__close-button/payment-modal__close-button.css");
+@import url("body/payment-modal/__content/payment-modal__content.css");
+@import url("body/payment-modal/__form/payment-modal__form.css");
+@import url("body/payment-modal/__input/payment-modal__input.css");
+@import url("body/payment-modal/__row/payment-modal__row.css");
+@import url("body/payment-modal/__title/payment-modal__title.css");
+@import url("body/payment-modal/__visible/payment-modal__visible.css");
+
+@import url("body/footer/__copyright/footer__copyright.css");
+@import url("body/footer/__menu/footer__menu.css");
+@import url("body/footer/__socials/footer__socials.css");
+
+@import url("body/header/__menu/header__menu.css");
+@import url("body/header/__nav/header__nav.css");
+
+/* Модификаторы */
+
+@import url("body/ticket/__icon/-image/ticket__icon-image.css");
+
+@import url("body/footer/__menu/-item/footer__menu-item.css");
+@import url("body/footer/__menu/-link/footer__menu-link.css");
+@import url("body/footer/__socials/_icon/footer__socials_icon.css");
+@import url("body/footer/__socials/_link/footer__socials_link.css");
+
+@import url("body/header/__menu/header__menu-button.css");
+@import url("body/header/__menu/header__menu-item.css");
+@import url("body/header/__menu/header__menu-link.css");
