@@ -1,0 +1,33 @@
+.footer__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 10px;
+}
+
+@media (max-width: 1280px) {
+    .footer__menu {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__menu {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

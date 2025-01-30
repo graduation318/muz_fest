@@ -1,0 +1,38 @@
+.header__button {
+    font-family: Compacta;
+    font-size: 18px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center; 
+}
+
+.header__button:hover {
+    color: #663187;
+    background-color: white;
+    text-shadow: none;
+}
+
+.header__button:focus {
+    outline: none; 
+}
+
+.header__button:active {
+    color: white;
+    background: none;
+    text-shadow: none;
+}
+
+@media (max-width: 480px) {
+    .header__button {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}

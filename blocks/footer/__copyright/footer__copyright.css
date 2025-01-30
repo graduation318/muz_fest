@@ -1,0 +1,32 @@
+.footer__copyright {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1280px) {
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer__copyright {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__copyright {
+        font-size: 10px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+}
