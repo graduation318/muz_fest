@@ -1,2 +1,15 @@
-@import url("/fonts/Compacta.woff2"); 
-@import url("/fonts/ProstoOne-Regular.woff2");
+@font-face {
+    font-family: "Compacta";
+    src: url("/fonts/Compacta.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProstoOne";
+    src: url("/fonts/ProstoOne-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
