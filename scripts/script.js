@@ -1,13 +1,10 @@
-const navLinks = document.querySelectorAll(".header__menu-link");
-const currentPage = window.location.pathname; // Используем pathname вместо полного URL
-
+const navLinks = document.querySelectorAll(".header__link");
+const currentPage = window.location.pathname; 
 navLinks.forEach((link) => {
-    // Если href совпадает с текущим путем, добавляем класс active
     if (link.pathname === currentPage) {
         link.classList.add("active");
     }
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const festivalDate = new Date("2025-06-01T00:00:00").getTime();
@@ -30,19 +27,30 @@ document.addEventListener("DOMContentLoaded", () => {
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        document.getElementById("days").textContent = days.toString().padStart(2, "0");
-        document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
-        document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
-        document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+        const daysElement = document.getElementById("days");
+        const hoursElement = document.getElementById("hours");
+        const minutesElement = document.getElementById("minutes");
+        const secondsElement = document.getElementById("seconds");
+
+        daysElement.textContent = days.toString().padStart(2, "0");
+        daysElement.setAttribute("datetime", `P${days}DT0H0M0S`);
+
+        hoursElement.textContent = hours.toString().padStart(2, "0");
+        hoursElement.setAttribute("datetime", `P0DT${hours}H0M0S`);
+
+        minutesElement.textContent = minutes.toString().padStart(2, "0");
+        minutesElement.setAttribute("datetime", `P0DT0H${minutes}M0S`);
+
+        secondsElement.textContent = seconds.toString().padStart(2, "0");
+        secondsElement.setAttribute("datetime", `P0DT0H0M${seconds}S`);
     }
 
     setInterval(updateCountdown, 1000);
     updateCountdown();
 });
 
-
     document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll(".slideshow-image");
+      const images = document.querySelectorAll(".slideshow__image");
       const interval = 5000;
   
       let currentImageIndex = 0;
@@ -63,14 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const music = document.getElementById("background-music");
     const toggleVolumeButton = document.getElementById("toggle-volume");
 
-    // Проверяем состояние музыки, сохраненное в localStorage
     let isMuted = localStorage.getItem("isMuted") === "true";
 
-    // Устанавливаем громкость в зависимости от сохраненного состояния
     music.volume = isMuted ? 0 : 1.0;
     toggleVolumeButton.textContent = isMuted ? "🔈 Включить" : "🔊 Выключить";
 
-    // Переключаем громкость при нажатии на кнопку
     toggleVolumeButton.addEventListener("click", () => {
         if (isMuted) {
             music.volume = 1.0;
@@ -80,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
             toggleVolumeButton.textContent = "🔈 Включить";
         }
 
-        // Сохраняем состояние в localStorage
         isMuted = !isMuted;
         localStorage.setItem("isMuted", isMuted.toString());
 
@@ -90,25 +94,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-        const modal = document.getElementById('modal');
-        const modalImage = document.getElementById('modalImage');
-        const modalClose = document.getElementById('modalClose');
-        const galleryImages = document.querySelectorAll('.gallery__image');
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+    const modalClose = document.getElementById("modalClose");
+    const galleryImages = document.querySelectorAll(".gallery__image");
 
-        galleryImages.forEach(image => {
-            image.addEventListener('click', () => {
-                const imgSrc = image.getAttribute('data-image');
+    galleryImages.forEach(image => {
+        image.addEventListener("click", () => {
+            const imgSrc = image.getAttribute("data-image");
+
+            if (imgSrc) {
                 modalImage.src = imgSrc;
-                modal.style.display = 'flex';
-            });
-        });
-
-        modalClose.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
+                modal.style.display = "flex";
+            } else {
+                console.error("Отсутствует атрибут data-image у элемента:", image);
             }
         });
+    });
+
+    modalClose.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
