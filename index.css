@@ -1,0 +1,130 @@
+@import url("./vendor/normalize.css");
+@import url("./fonts/fonts.css");
+
+/* Блоки */
+
+@import url("./blocks/body/body.css");
+@import url("./blocks/header/header.css");
+
+@import url("./blocks/countdown/countdown.css");
+@import url("./blocks/information/information.css");
+@import url("./blocks/slideshow/slideshow.css");
+@import url("./blocks/gallery/gallery.css");
+@import url("./blocks/modal/modal.css");
+@import url("./blocks/section-divider/section-divider.css");
+@import url("./blocks/schedule/schedule.css");
+@import url("./blocks/artists/artists.css");
+@import url("./blocks/artists/modal/modal.css");
+@import url("./blocks/map/map.css");
+@import url("./blocks/legend/legend.css");
+@import url("./blocks/tickets/tickets.css");
+@import url("./blocks/ticket/ticket.css");
+@import url("./blocks/payment/payment.css");
+
+
+@import url("./blocks/footer/footer.css");
+
+/* Элементы */
+
+/* Шапка */
+
+@import url("./blocks/header/__nav/header__nav.css");
+@import url("./blocks/header/__menu/header__menu.css");
+@import url("./blocks/header/__item/header__item.css");
+@import url("./blocks/header/__link/header__link.css");
+@import url("./blocks/header/__button/header__button.css");
+
+
+/* Главная страница */
+
+@import url("./blocks/countdown/__title/countdown__title.css");
+@import url("./blocks/countdown/__time/countdown__time.css");
+@import url("./blocks/countdown/__timer/countdown__timer.css");
+@import url("./blocks/countdown/__number/countdown__number.css");
+@import url("./blocks/countdown/__label/countdown__label.css");
+@import url("./blocks/countdown/__finished/countdown__finished.css");
+
+@import url("./blocks/information/__title/information__title.css");
+@import url("./blocks/information/__content/information__content.css");
+@import url("./blocks/information/__text/information__text.css");
+@import url("./blocks/information/__button/information__button.css");
+
+@import url("./blocks/gallery/__title/gallery__title.css");
+@import url("./blocks/gallery/__grid/gallery__grid.css");
+@import url("./blocks/gallery/__image/gallery__image.css");
+@import url("./blocks/gallery/__caption/gallery__caption.css");
+@import url("./blocks/modal/__close/modal__close.css");
+
+/* Расписание */
+
+@import url("./blocks/schedule/__title/schedule__title.css");
+@import url("./blocks/schedule/__button/schedule__button.css");
+@import url("./blocks/schedule/__day/schedule__day.css");
+@import url("./blocks/schedule/__heading/schedule__heading.css");
+@import url("./blocks/schedule/__content/schedule__content.css");
+@import url("./blocks/schedule/__event/schedule__event.css");
+@import url("./blocks/schedule/__time/schedule__time.css");
+@import url("./blocks/schedule/__activity/schedule__activity.css");
+
+/* Артисты */
+
+@import url("./blocks/artists/__title/artists__title.css");
+@import url("./blocks/artists/__card/artists__card.css");
+@import url("./blocks/artists/__card/__image/artists__card__image.css");
+
+@import url("./blocks/artists/modal/__content/modal__content.css");
+@import url("./blocks/artists/modal/__close/modal__close.css");
+@import url("./blocks/artists/modal/__title/modal__title.css");
+@import url("./blocks/artists/modal/__image/modal__image.css");
+@import url("./blocks/artists/modal/__description/modal__description.css");
+
+/* Карта фестиваля */
+
+@import url("./blocks/map/__title/map__title.css");
+@import url("./blocks/map/__image/map__image.css");
+
+@import url("./blocks/legend/__column/legend__column.css");
+@import url("./blocks/legend/__item/legend__item.css");
+@import url("./blocks/legend/__number/legend__number.css");
+@import url("./blocks/legend/__label/legend__label.css");
+
+/* Билеты */
+
+@import url("./blocks/tickets/__title/tickets__title.css");
+@import url("./blocks/tickets/__subtitle/tickets__subtitle.css");
+@import url("./blocks/tickets/__list/tickets__list.css");
+
+@import url("./blocks/ticket/__icon/ticket__icon.css");
+@import url("./blocks/ticket/__icon/__image/ticket__icon__image.css");
+@import url("./blocks/ticket/__title/ticket__title.css");
+@import url("./blocks/ticket/__features/ticket__features.css");
+@import url("./blocks/ticket/__feature/ticket__feature.css");
+@import url("./blocks/ticket/__button/ticket__button.css");
+
+@import url("./blocks/payment/__content/payment__content.css");
+@import url("./blocks/payment/__close/payment__close.css");
+@import url("./blocks/payment/__title/payment__title.css");
+@import url("./blocks/payment/__row/payment__row.css");
+@import url("./blocks/payment/__input/payment__input.css");
+@import url("./blocks/payment/__visible/payment__visible.css");
+@import url("./blocks/payment/__button/payment__button.css");
+
+/* Подвал */
+
+@import url("./blocks/footer/__socials/footer__socials.css");
+@import url("./blocks/footer/__menu/footer__menu.css");
+@import url("./blocks/footer/__copyright/footer__copyright.css");
+@import url("./blocks/footer/__item/footer__item.css");
+@import url("./blocks/footer/__link/footer__link.css");
+
+/* Модификаторы */
+
+/* Артисты */
+
+@import url("./blocks/artists/__card/-overlay/artists__card-overlay.css");
+@import url("./blocks/artists/__card/-play/artists__card-play.css");
+
+/* Подвал */
+
+@import url("./blocks/footer/__socials/footer__socials-icon.css");
+@import url("./blocks/footer/__socials/footer__socials-link.css");

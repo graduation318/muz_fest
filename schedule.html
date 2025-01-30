@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./blocks/schedule/schedule.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="./icons/icon/good-life-icon.ico" type="image/x-icon">
     <title>Good Life Fest</title>
 </head>
@@ -11,13 +11,25 @@
     <header class="header">
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu-item"><a class="header__menu-link" href="./index.html">Главная</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">Расписание</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="./artists.html">Артисты</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="./map.html">Карта фестиваля</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="./tickets.html">Билеты</a></li>
-                <li class="header__menu-item">
-                    <button id="toggle-volume" class="header__menu-button">🔊 Включить</button>
+                <li class="header__item">
+                    <a class="header__link" href="./index.html">Главная</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Расписание</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./artists.html">Артисты</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./map.html">Карта фестиваля</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./tickets.html">Билеты</a>
+                </li>
+                <li class="header__item">
+                    <button id="toggle-volume" aria-label="Воспроизведение" class="header__button">
+                        🔊 Включить
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -28,41 +40,42 @@
         Ваш браузер не поддерживает воспроизведение аудио.
     </audio>
 
+<main>
     <section class="schedule">
-        <div class="schedule__title">Расписание Дней Фестиваля</div>
+        <h1 class="schedule__title">Расписание Дней Фестиваля</h1>
 
-        <button class="schedule__button">
-            <a href="./images/schedule/schedule.png" download="./images/schedule/schedule.png">Сохранить расписание</a>
+        <button id="downloadButton" class="schedule__button" aria-label="Сохранить расписание">
+            Сохранить расписание
         </button>
 
         <div class="schedule__day">
-            <div class="schedule__day-title">День 1</div>
+            <div class="schedule__heading">День 1</div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">14:00 - 16:00</div>
                     <div class="schedule__activity">Открытие фестиваля. Встреча гостей, интерактивные зоны у входа.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">16:00 - 17:30</div>
                     <div class="schedule__activity">Локальные артисты: энергичное начало на главной сцене.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">17:30 - 18:30</div>
                     <div class="schedule__activity">Imagine Dragons: хиты и мощное выступление.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">18:30 - 20:00</div>
                     <div class="schedule__activity">Daft Punk: танцевальный сет с культовой электроникой.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">20:00 - 21:30</div>
                     <div class="schedule__activity">Kanye West: заключительный перформанс первого дня.</div>
                 </div>
@@ -70,39 +83,39 @@
         </div>
 
         <div class="schedule__day">
-            <div class="schedule__day-title">День 2</div>
+            <div class="schedule__heading">День 2</div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">10:00 - 12:00</div>
                     <div class="schedule__activity">Утренняя йога: расслабляющая практика на свежем воздухе.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">12:30 - 14:00</div>
                     <div class="schedule__activity">Фуд-зона: время для вкусных открытий.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">14:30 - 16:00</div>
                     <div class="schedule__activity">Future: драйвовый сет рэпера.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">16:30 - 18:00</div>
                     <div class="schedule__activity">Post Malone: атмосферное выступление с хитами.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">19:00 - 21:00</div>
                     <div class="schedule__activity">Travis Scott: энергетика и захватывающее шоу.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">21:30 - 23:00</div>
                     <div class="schedule__activity">The Weeknd: финал второго дня с его хитами.</div>
                 </div>
@@ -110,55 +123,72 @@
         </div>
 
         <div class="schedule__day">
-            <div class="schedule__day-title">День 3</div>
+            <div class="schedule__heading">День 3</div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">11:00 - 12:00</div>
                     <div class="schedule__activity">Лекция об экологии: вдохновляющие идеи и дискуссии.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">12:30 - 14:00</div>
                     <div class="schedule__activity">Tame Impala: психоделический рок с потрясающими визуалами.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">14:30 - 16:00</div>
                     <div class="schedule__activity">Мастер-класс по танцам: учимся от лучших.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">16:30 - 18:00</div>
                     <div class="schedule__activity">Eminem: неповторимый стиль и главные хиты.</div>
                 </div>
             </div>
             <div class="schedule__event">
-                <div class="schedule__event-content">
+                <div class="schedule__content">
                     <div class="schedule__time">18:30 - 20:00</div>
                     <div class="schedule__activity">Закрытие фестиваля: подведение итогов и прощальный сет.</div>
                 </div>
             </div>
         </div>
     </section>
+</main>
 
-    <footer class="footer">
-        <div class="footer__socials">
-            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="./icons/socials/instagram.svg" alt="Instagram"></a>
-            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="./icons/socials/facebook.svg" alt="Facebook"></a>
-            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="./icons/socials/x.svg" alt="Twitter"></a>
-            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="./icons/socials/vk.svg" alt="VK"></a>
-            <a class="footer__socials_link" href="#"><img class="footer__socials_icon" src="./icons/socials/tg.svg" alt="Telegram"></a>
-        </div>
-        <ul class="footer__menu">
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#faq">ЧАВО</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#privacy">Политика конфиденциальности</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#contacts">Контакты</a></li>
-        </ul>
-        <p class="footer__copyright">&copy; 2024 Good Life Fest. Все права соблюдены.</p>
-    </footer>
+        <footer class="footer">
+            <div class="footer__socials">
+                <a class="footer__socials footer__socials-link" href="#">
+                    <img class="footer__socials footer__socials-icon" src="./icons/socials/instagram.svg" alt="Instagram">
+                </a>
+                <a class="footer__socials footer__socials-link" href="#">
+                    <img class="footer__socials footer__socials-icon" src="./icons/socials/facebook.svg" alt="Facebook">
+                </a>
+                <a class="footer__socials footer__socials-link" href="#">
+                    <img class="footer__socials footer__socials-icon" src="./icons/socials/x.svg" alt="Twitter">
+                </a>
+                <a class="footer__socials footer__socials-link" href="#">
+                    <img class="footer__socials footer__socials-icon" src="./icons/socials/vk.svg" alt="VK">
+                </a>
+                <a class="footer__socials footer__socials-link" href="#">
+                    <img class="footer__socials footer__socials-icon" src="./icons/socials/tg.svg" alt="Telegram">
+                </a>
+            </div>
+            <ul class="footer__menu">
+                <li class="footer__item">
+                    <a class="footer__link" href="#faq">ЧАВО</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#privacy">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <p class="footer__copyright">&copy; 2024 Good Life Fest. Жомер Никита.</p>
+        </footer>
     <script src="./scripts/schedule.js"></script>
 </body>
 </html>
