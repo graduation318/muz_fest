@@ -1,0 +1,37 @@
+.information__text {
+    font-family: ProstoOne;
+    width: 598px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1280px) {
+    .information__text {
+        font-size: 18px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .information__text {
+        font-size: 16px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .information__text {
+        font-size: 14px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .information__text {
+        font-size: 12px;
+        width: 100%;
+    }
+}

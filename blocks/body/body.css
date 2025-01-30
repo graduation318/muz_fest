@@ -1,0 +1,14 @@
+body {
+    font-family: Compacta;
+    margin: 0;
+    background: linear-gradient(45deg, #D48068, #9D3C54, #902769, #882D87, #663187);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    flex-direction: column;
+}

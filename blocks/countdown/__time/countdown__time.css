@@ -1,0 +1,39 @@
+.countdown__time {
+    position: relative;
+    width: 160px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 1280px) {
+    .countdown__time {
+        width: 140px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .countdown__time {
+        width: 120px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .countdown__time {
+        width: 100px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown__time {
+        width: 80px;
+        height: 100px;
+    }
+}

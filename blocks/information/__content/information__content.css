@@ -1,0 +1,14 @@
+.information__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .information__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

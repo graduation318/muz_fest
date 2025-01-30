@@ -1,0 +1,38 @@
+.information__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 36px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 15px 120px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+@media (max-width: 1280px) {
+    .information__title {
+        font-size: 32px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .information__title {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .information__title {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .information__title {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+}
