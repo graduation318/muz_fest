@@ -1,0 +1,34 @@
+.payment__content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+@media (max-width: 1280px) {
+    .payment__content {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .payment__content {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment__content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment__content {
+        width: 95%;
+        padding: 15px;
+    }
+}

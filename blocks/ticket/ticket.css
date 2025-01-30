@@ -1,0 +1,43 @@
+.ticket {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1280px) {
+    .ticket {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ticket {
+        width: 280px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ticket {
+        width: 90%;
+        max-width: 350px;
+        height: 390px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ticket {
+        width: 100%;
+        max-width: 320px;
+        height: 375px;
+        padding: 15px;
+    }
+}

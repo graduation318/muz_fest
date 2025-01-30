@@ -1,0 +1,11 @@
+.schedule__day {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .schedule__day {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

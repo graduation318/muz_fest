@@ -1,0 +1,4 @@
+.payment__row {
+    display: flex;
+    gap: 15px;
+}

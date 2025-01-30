@@ -1,0 +1,19 @@
+.ticket__icon {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .ticket__icon {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ticket__icon {
+        width: 120px;
+        height: 120px;
+    }
+}

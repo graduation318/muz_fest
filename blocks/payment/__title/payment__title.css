@@ -1,0 +1,32 @@
+.payment__title {
+    font-size: 28px;
+    color: #663287;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+    .payment__title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .payment__title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment__title {
+        font-size: 20px;
+    }
+}

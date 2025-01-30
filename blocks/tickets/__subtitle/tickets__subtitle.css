@@ -1,0 +1,38 @@
+.tickets__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 15px 90px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+@media (max-width: 1280px) {
+    .tickets__subtitle {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tickets__subtitle {
+        font-size: 24px;
+        padding: 15px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets__subtitle {
+        font-size: 22px;
+        max-width: 90%;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .tickets__subtitle {
+        font-size: 20px;
+    }
+}

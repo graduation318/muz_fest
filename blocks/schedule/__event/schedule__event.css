@@ -1,0 +1,17 @@
+.schedule__event {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .schedule__event {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

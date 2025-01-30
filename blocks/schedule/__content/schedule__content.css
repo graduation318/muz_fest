@@ -1,0 +1,14 @@
+.schedule__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .schedule__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
